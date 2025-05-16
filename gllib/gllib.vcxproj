@@ -140,6 +140,7 @@
     <ClInclude Include="includes\gllcore.h" />
     <ClInclude Include="includes\math\range_types.h" />
     <ClInclude Include="includes\math\rng.h" />
+    <ClInclude Include="includes\other\gll_algorithms.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\math\dice.cpp" />

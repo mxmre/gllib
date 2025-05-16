@@ -39,15 +39,10 @@ namespace gl
 		template <class T, class _MinCheck, class _MaxCheck>
 		struct range_t
 		{
-			
+			using range_value_type = T;
 			range_t(const T& min, const T& max)
 			{
-				if (max > min)
-				{
-					this->_min = min;
-					this->_max = max;
-				}
-				else throw std::invalid_argument("min >= max");
+				this->set_range(min, max);
 			}
 			void set_range(const T& min, const T& max)
 			{
@@ -56,7 +51,7 @@ namespace gl
 					this->_min = min;
 					this->_max = max;
 				}
-				else throw std::invalid_argument("min >= max");
+				else throw std::invalid_argument("must be this: min < max");
 			}
 			range_relation in_range(const T& val) const
 			{
