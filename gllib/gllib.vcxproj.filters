@@ -18,7 +18,7 @@
     <ClInclude Include="includes\math\range_types.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="includes\logic_attribute.h">
+    <ClInclude Include="includes\logic\attributes.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="includes\math\rng.h">
@@ -27,10 +27,10 @@
     <ClInclude Include="includes\math\dice.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="includes\gllcore.h">
+    <ClInclude Include="includes\core\gllcore.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="includes\other\gll_algorithms.h">
+    <ClInclude Include="includes\core\gll_algorithms.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

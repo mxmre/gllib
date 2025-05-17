@@ -40,6 +40,7 @@ namespace gl
 		struct range_t
 		{
 			using range_value_type = T;
+			
 			range_t(const T& min, const T& max)
 			{
 				this->set_range(min, max);
@@ -60,7 +61,6 @@ namespace gl
 				if (_MaxCheck::greater_than_check(val, this->_max))
 					return range_relation::right;
 				return range_relation::inside;
-				
 			}
 			T get_min() const
 			{
@@ -69,6 +69,11 @@ namespace gl
 			T get_max() const
 			{
 				return this->_max;
+			}
+
+			bool operator==(const range_t<T, _MinCheck, _MaxCheck>& other) const
+			{
+				return this->_min == other._min && this->_max == other._max;
 			}
 		private:
 			T _min, _max;

@@ -135,12 +135,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="includes\logic_attribute.h" />
+    <ClInclude Include="includes\logic\attributes.h" />
     <ClInclude Include="includes\math\dice.h" />
-    <ClInclude Include="includes\gllcore.h" />
+    <ClInclude Include="includes\core\gllcore.h" />
     <ClInclude Include="includes\math\range_types.h" />
     <ClInclude Include="includes\math\rng.h" />
-    <ClInclude Include="includes\other\gll_algorithms.h" />
+    <ClInclude Include="includes\core\gll_algorithms.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\math\dice.cpp" />

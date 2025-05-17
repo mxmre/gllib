@@ -1,4 +1,0 @@
-#ifndef GLLIB_GLLCORE_H_INCLUDED
-#define GLLIB_GLLCORE_H_INCLUDED
-
-#endif
